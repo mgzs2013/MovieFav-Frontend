@@ -1,0 +1,7 @@
+<h1></h1>
+<form (ngSubmit)="createMovie()">
+    <input type="text" name="id" [(ngModel)]="newMove.id">
+    <input type="text" name="title" [(ngModel)]="newMove.title">
+    <input type="checkbox" name="watched" [(ngModel)]="newMove.watched">
+    <button>Create</button>
+</form>

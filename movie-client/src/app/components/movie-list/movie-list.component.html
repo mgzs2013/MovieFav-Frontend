@@ -1,0 +1,10 @@
+<p>movie-list works!</p>
+
+<div *ngFor="let movie of movies">
+    <p>{{movie.id}}: {{movie.title}} Watched: {{movie.watched}}</p>
+    <input
+        type="checkbox"
+        [checked]="movie.watched"
+        (change)="updateWatched()"
+    >
+</div> 
